@@ -1,4 +1,3 @@
-/// <reference no-default-lib="true"/>
 import React, { useRef, useState } from "react";
 
 interface AccordionProps {
@@ -15,6 +14,7 @@ export const Accordion: React.FC<AccordionProps> = ({ title, content }) => {
 
   function toggleAccordion() {
     setActive((prevState) => !prevState);
+    // @ts-nocheck
     setHeight(active ? "0px" : `${contentSpace.current.scrollHeight}px`);
     setRotate(
       active

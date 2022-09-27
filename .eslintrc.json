@@ -1,12 +1,9 @@
 {
   "parser": "@typescript-eslint/parser",
+  /* eslint-disable  @typescript-eslint/no-explicit-any */
   "parserOptions": {
     "project": "./tsconfig.json"
   },
   "plugins": ["@typescript-eslint"],
-  "extends": ["next/core-web-vitals", "plugin:@typescript-eslint/recommended"],
-
-  "compilerOptions": {
-    "skipDefaultLibCheck": true
-  }
+  "extends": ["next/core-web-vitals", "plugin:@typescript-eslint/recommended"]
 }
