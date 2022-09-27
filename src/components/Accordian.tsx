@@ -4,7 +4,6 @@ import React, { useRef, useState } from "react";
 interface AccordionProps {
   title: React.ReactNode;
   content: React.ReactNode;
-  contenSpace: any | null;
 }
 
 export const Accordion: React.FC<AccordionProps> = ({ title, content }) => {
