@@ -1,5 +1,11 @@
 import React from "react";
+const style = {
+  "--value": "80",
+  "--size": "12rem",
+  "--thickness": "1rem",
+} as React.CSSProperties;
 import { Progress } from "../components/Bar";
+import { CircularProgressbar } from "react-circular-progressbar";
 import Features from "../components/Features";
 
 function Breakdown() {
@@ -12,7 +18,7 @@ function Breakdown() {
         <h1 className="pr-16">Score</h1>
         <div
           className="radial-progress  text-primary bg-accent  mb-10"
-          style={{ "--value": "80", "--size": "12rem", "--thickness": "1rem" }}
+          style={style}
         >
           <h1 className="text-5xl font-bold text-secondary ">9.4</h1>
         </div>

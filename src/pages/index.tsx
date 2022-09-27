@@ -9,7 +9,7 @@ const Home: NextPage = () => {
   return (
     <div className="grid grid-cols-1 px-10  md:grid-cols-3 pt-5 justify ">
       <SideBar />
-      <div className="col-span-2 row-span-2 ">
+      <div className="col-span-2 row-span-2 pl-4 ">
         <Review />
         <TabSwitcher />
       </div>
