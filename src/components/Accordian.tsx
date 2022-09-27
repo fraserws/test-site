@@ -14,7 +14,7 @@ export const Accordion: React.FC<AccordionProps> = ({ title, content }) => {
 
   function toggleAccordion() {
     setActive((prevState) => !prevState);
-    // @ts-nocheck
+    //eslint-disable-next-line
     setHeight(active ? "0px" : `${contentSpace.current.scrollHeight}px`);
     setRotate(
       active
