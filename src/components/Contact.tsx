@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import person from "../assets/person.png";
 import { AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
 
 function Contact() {
@@ -10,7 +11,7 @@ function Contact() {
           <div className="pl-3 ">
             <Image
               className=""
-              src={"/../public/person.png"}
+              src={person}
               width={161.3}
               height={153}
               layout="fixed"

@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import logo from "../assets/logo.png";
 import Header from "./Header";
 
 function SideBar() {
@@ -9,7 +10,7 @@ function SideBar() {
       <div className="grid max-w-fit ">
         <Header />
         <Image
-          src="/../public/logo.png"
+          src={logo}
           className=" align-end "
           width={300}
           height={300}
